@@ -4,9 +4,12 @@ public class Book {
     private long id;
     private String title;
     private boolean available;
-    private long borrowerId;
+    private Long borrowerId;
 
-    public Book(long id, String title, boolean available, long borrowerId) {
+    public Book() {
+    }
+
+    public Book(long id, String title, boolean available, Long borrowerId) {
         this.id = id;
         this.title = title;
         this.available = available;
@@ -37,11 +40,11 @@ public class Book {
         this.available = available;
     }
 
-    public long getBorrowerId() {
+    public Long getBorrowerId() {
         return borrowerId;
     }
 
-    public void setBorrowerId(long borrowerId) {
+    public void setBorrowerId(Long borrowerId) {
         this.borrowerId = borrowerId;
     }
 }
